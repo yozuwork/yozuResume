@@ -73,7 +73,7 @@ createApp({
                 {
                     title: "Vue漫畫電商主題網站",
                     description: "這是我目前的個人練習作品，使用了以下技術和插件：",
-                    image: "assets/images/bookshop.jpg",
+                    image: "assets/images/bookshop.png",
                     category: "personal",
                     date: "2024",
                     client: "我自己",
