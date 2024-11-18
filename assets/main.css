@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #FFE381;
+    padding: 20px;
+    color: #1a1a1a;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.window {
+    background-color: #FFF5D6;
+    border: 3px solid #1a1a1a;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.1);
+}
+
+.title-bar {
+    background-color: #FFF5D6;
+    padding: 10px;
+    border-bottom: 2px solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.window-controls {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #1a1a1a;
+    border-radius: 50%;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.nav-link {
+    padding: 8px 20px;
+    background: #FFF5D6;
+    border: 2px solid #1a1a1a;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #1a1a1a;
+    color: #FFF5D6;
+}
+
+.nav-link::after {
+    content: "↗";
+    margin-left: 5px;
+}
+
+.portfolio-section {
+    padding: 40px;
+}
+
+/* 分類標籤樣式 */
+.category-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    padding: 8px 20px;
+    background: #FFF5D6;
+    border: 2px solid #1a1a1a;
+    cursor: pointer;
+    color: #1a1a1a;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover,
+.category-tab.active {
+    background: #1a1a1a;
+    color: #FFF5D6;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.portfolio-item {
+    border: 2px solid #1a1a1a;
+    padding: 15px;
+    background: #FFF5D6;
+}
+
+.portfolio-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border: 2px solid #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.view-project {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #FFF5D6;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.view-project:hover {
+    background: #1a1a1a;
+    color: #FFF5D6;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: #FFF5D6;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: #1a1a1a;
+    color: #FFF5D6;
+}
+
+.back-button::before {
+    content: '←';
+    margin-right: 8px;
+}
+
+.project-detail {
+    padding: 40px;
+}
+
+.project-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.project-info {
+    border: 2px solid #1a1a1a;
+    padding: 20px;
+    height: fit-content;
+}
+
+.project-info p {
+    margin-bottom: 10px;
+}
+
+.project-gallery {
+    margin-top: 40px;
+}
+
+.project-gallery h3 {
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-section,
+    .portfolio-grid,
+    .project-content,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links,
+    .category-tabs {
+        flex-wrap: wrap;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .hero-section,
+    .portfolio-section,
+    .project-detail {
+        padding: 20px;
+    }
+}
