@@ -112,7 +112,7 @@ createApp({
                         "assets/images/bookshop05.jpg",
                         "assets/images/bookshop06.jpg"
                     ],
-                    link:"",
+                    link:"https://yamoli0911.github.io/yobook/dist/#/",
                     order:1,
                 }
             ]
