@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="hero-image">
-                            <img src="assets/images/avatartion.png" alt="Retro Computer" style="width: 50%; border: 2px solid #1a1a1a;">
+                            <img src="assets/images/people.jpg" alt="Retro Computer" style="width: 50%; border: 2px solid #1a1a1a;">
                         </div>
                     </div>
 
