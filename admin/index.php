@@ -86,7 +86,7 @@
 <body>
     <div class="login-container">
         <h1>柚子履歷後台</h1>
-        <form action="/admin/login.php" method="post" name="login">
+        <form action="/yozuResume/admin/login.php" method="post" name="login">
             <div class="mb-3">
                 <input type="text" class="form-control" placeholder="Username" name="username" required autofocus>
             </div>
